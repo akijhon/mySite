@@ -1,0 +1,38 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block customcss %}
+<link rel='stylesheet' type='text/css' href="{% static 'society.css'%}">
+{% endblock customcss %}
+
+{% block content%}
+  <h1>所属サークル紹介</h1>
+  <hr>
+  <div class='DartsContainer'>
+    <div class='DartsIntro'>
+      <h2>早稲田大学Artemis</h2>
+      <ul>
+        <li>早稲田大学のインカレダーツサークル</li>
+        <li>活動は毎週火・木曜日</li>
+        <li>初心者からプロまで約60人在籍</li>
+        <li>スポンサー：D.craft様・DARTS STADIUM 池袋様</li>
+      </ul>
+    </div>
+    <div class='DartsTweet'>
+      <a class="twitter-timeline" href="https://twitter.com/waseda_artemis?ref_src=twsrc%5Etfw" data-width="300" data-height="600" >Tweets by waseda_artemis</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </div>
+
+  <div class='MovieContainer'>
+  <div class='MovieIntro'>
+    <h2>東大映画鑑賞サークル</h2>
+    <ul>
+      <li>2019年創設　東京大学のインカレ映画鑑賞サークル</li>
+      <li>活動は毎週月・水曜日</li>
+      <li>約30人在籍</li>
+    </ul>
+  </div>
+  <div class='MovieTweet'>
+    <a class="twitter-timeline" href="https://twitter.com/pronto_utokyo?ref_src=twsrc%5Etfw"　data-width="300" data-height="600" >Tweets by pronto_utokyo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  </div>
+{% endblock content%}

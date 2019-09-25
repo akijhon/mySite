@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+  {% load static %}
+  {% block customcss %}
+  <link rel='stylesheet' type='text/css' href="{% static 'darts.css'%}">
+  {% endblock customcss %}
+
+{% block content %}
+<div class='Results'>
+  <div class='title'>
+    <h1>主な戦績</h1>
+  </div>
+  <div class='Contents'>
+  <div class='Competition'>
+    <h2>UDC</h2>
+    <h3>(UniversityDartsChampionship)</h3>
+  </div>
+  <div class='CompetitionResult'>
+    <ul>
+     <li>vol.15ダブルス準優勝銀🥈</li>
+     <li>vol.16シングルス準優勝🥈</li>
+     <li>vol.16ダブルス準優勝🥈</li>
+     <li>vol.16トリオス優勝🥇</li>
+    </ul>
+  </div>
+  <div class='Competition'>
+    <h2>U22</h2>
+  </div>
+  <div class='CompetitionResult'>
+    <ul>
+     <li>埼玉県予選優勝🥇</li>
+     <li>ベスト8</li>
+    </ul>
+  </div>
+  <div class='Competition'>
+    <h2>Japan</h2>
+    <h3>(SoftDartsProfessionalTour)</h3>
+  </div>
+  <div class='CompetitionResult'>
+    <ul>
+     <li>2018年4月ロビン抜け一回戦敗退</li>
+     <li>2018年9月ロビン抜け一回戦敗退</li>
+    </ul>
+  </div>
+  </div>
+</div>
+<div class='Movie'>
+  <iframe width="400" height="200" src="https://www.youtube.com/embed/9Txo90ANtVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="400" height="200" src="https://www.youtube.com/embed/BAvjdtT3Fs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="400" height="200" src="https://www.youtube.com/embed/qIFOnXjuv_Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+{% endblock content %}

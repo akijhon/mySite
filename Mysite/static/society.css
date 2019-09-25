@@ -1,0 +1,63 @@
+
+h1{
+  color:aqua;
+}
+h2{
+  color:white;
+}
+
+
+
+.header {
+  height: 50px;
+  width: 100%;
+  background-color:rgba(0,0,0,0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+.container a{
+  color :white;
+  float:left;
+  padding-left:60px;
+  padding-top:17px;
+}
+
+.body{
+  margin-top:50px;
+  height: 1700px;
+  width:100%;
+  background-image: url("/static/maeda3gou1929010_TP_V4.jpg");
+}
+.DartsContainer{
+  height:750px;
+  width:100%;
+}
+.DartsIntro{
+  float:left;
+}
+.DartsIntro li{
+  color:white;
+}
+.DartsTweet{
+  float:right;
+  padding-right:100px;
+}
+.MovieContainer{
+  height:750px
+  width:100%;
+}
+.MovieIntro{
+  float:left;
+}
+.MovieIntro li{
+  color:white;
+}
+.MovieTweet{
+  float:right;
+  padding-right:100px;
+}
+
+.footer{
+  height:90px;
+}

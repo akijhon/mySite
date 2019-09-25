@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block customcss %}
+<link rel='stylesheet' type='text/css' href="{% static 'portfolio.css'%}">
+{% endblock customcss %}
+
+{% block content %}
+<div>
+<h1>Portfolio</h1>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <img src={{object_list1.images.url}} class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{object_list1.title}}</h5>
+    <a href="{% url 'py'%}" class="btn btn-primary">Check</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src={{object_list2.images.url}} class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{object_list2.title}}</h5>
+    <a href="{% url 'js'%}" class="btn btn-primary">Check</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src={{object_list3.images.url}} class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{object_list3.title}}</h5>
+    <a href="{% url 'php'%}" class="btn btn-primary">Check</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src={{object_list4.images.url}} class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{object_list4.title}}</h5>
+    <a href="{% url 'ruby'%}" class="btn btn-primary">Check</a>
+  </div>
+</div>
+
+
+{% endblock content %}

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+  {% load static %}
+  {% block customcss %}
+  <link rel='stylesheet' type='text/css' href="{% static 'home.css'%}">
+  {% endblock customcss %}
+
+
+
+{% block content%}
+  <div class='plofile'>
+      <h1>プロフィール</h1>
+      <h2>秋山ジョン</h2>
+      <img src={{object.images.url}} width=200 height=200 alt='イメージ画像'/>
+
+        <ul>
+          <li>千葉県出身</li>
+          <li>高輪中学高等学校卒業</li>
+          <li>早稲田大学文化構想学部3年</<li>
+        </ul>
+  </div>
+  <div class='hobby'>
+      <h1>趣味</h1>
+        <ul>
+          <li>ダーツ</li>
+            <ul>
+              <li>プロ資格保持(SOFT DARTS PROFESSIONAL TOUR JAPAN)</li>
+              <li>高校時代ダーツ部所属</li>
+              <li>ダーツサークル:早稲田大学Artemis所属</li>
+              <li>UniversityDartsLeague(UDL)にてUniversityDartsChampionship(UDC)を運営</li>
+            </ul>
+          <li>卓球</li>
+          <ul>
+            <li>中学時代卓球部所属</li>
+          </ul>
+          <li>マジック</li>
+          <ul>
+            <li>高校時代マジック部所属</li>
+            <li>コインマジックをメインに取り組む</li>
+          </ul>
+          <li>映画</li>
+          <ul>
+            <li>映画鑑賞サークル:東京大学proto所属</li>
+          </ul>
+          <li>プログラミング</li>
+          <ul>
+            <li>Python,JavaScriptをメインで勉強中</li>
+          </ul>
+      </ul>
+
+    </div>
+
+{%endblock content%}
